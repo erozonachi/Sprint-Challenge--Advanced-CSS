@@ -176,6 +176,16 @@ p {
     margin: 0 1%;
   }
 }
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .navigation {
   background-color: #F6F6F6;
   border: 1px solid #F1F1F1;
@@ -233,6 +243,8 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+  animation-duration: 5s;
+  animation-name: slidein;
 }
 .home .space-images {
   display: flex;
