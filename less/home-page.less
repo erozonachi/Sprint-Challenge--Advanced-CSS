@@ -63,6 +63,13 @@
       }
 
       .btn {
+        .signup-button(@btn-bg-color, @sea-shell);
+
+        &:hover {
+          background-color: @sea-shell;
+          color: @btn-bg-color;
+          border: 1px solid @shuttle-gray;
+        }
       }
     }
 
