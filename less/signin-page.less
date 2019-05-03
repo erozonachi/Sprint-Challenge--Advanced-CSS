@@ -1,0 +1,57 @@
+
+.signin-container {
+  width: 100vw;
+  height: 100vh;
+  .go-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  form {
+    .go-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+    padding: 0 1em;
+    width: 50%;
+    background-color: @nav-bg;
+
+    @media @phone {
+      width: 95%;
+    }
+
+    input {
+      width: 95%;
+      font-size: 1.8rem;
+      padding: .75em 0;
+      margin: .5em 2.5%;
+      border: none;
+      outline: none;
+      border-radius: .5em;
+    }
+
+    .btn-group {
+      .go-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .btn {
+        .signin-button(@btn-bg-color, @sea-shell);
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        width: 40%;
+        margin: 0 .5%;
+        color: inherit;
+      }
+    }
+  }
+}
