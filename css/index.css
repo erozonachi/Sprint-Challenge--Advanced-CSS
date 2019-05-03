@@ -1,3 +1,10 @@
+.go-flex {
+  display: flex;
+}
+.nav-formatting {
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,6 +152,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.6rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -160,6 +170,39 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  background-color: #F6F6F6;
+  border: 1px solid #F1F1F1;
+}
+.navigation nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  color: #454A59;
+}
+.navigation nav h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.navigation nav .nav-items {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.navigation nav .nav-items a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin: 0 0.5em;
+  color: inherit;
+}
+.navigation nav .nav-items a:hover {
+  color: #81848E;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +212,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
