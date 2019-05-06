@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5 {
   color: @header-font-color;
 }
 
+h1 {
+  font-size: 3.6rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -34,5 +37,22 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @phone {
+    width: 98%;
+    margin: 0 1%;
+  }
+
 }
 
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

@@ -1,1 +1,42 @@
 // Mixins Here
+
+.go-flex {
+  display: flex;
+}
+
+.nav-formatting {
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-button(@bg-color, @text-color) {
+  width: 30%;
+  font-size: 1.8rem;
+  padding: .5em 0;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: .5em;
+  background-color: @bg-color;
+  color: @text-color;
+  cursor: pointer;
+}
+
+.signin-button(@bg-color, @text-color) {
+  width: 40%;
+  font-size: 1.8rem;
+  padding: .5em 0;
+  margin: 0 5%;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: .5em;
+  background-color: @bg-color;
+  color: @text-color;
+  cursor: pointer;
+}
+
+.animate-text(@name, @duration) {
+  animation-duration: @duration;
+  animation-name: @name;
+}
